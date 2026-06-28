@@ -26,7 +26,7 @@ GECCO 2024 (rank A)<br>
 
 <div class="pub" markdown="1">
 **FFTMed: Leveraging Fast-Fourier Transform for a Lightweight and Adversarial-Resilient Medical Image Segmentation Framework**<br>
-Viet Tien Pham\*, Minh Hieu Ha\*, Bao VQ Bui, Truong Son Hy<br>
+Viet Tien Pham\*, **Minh Hieu Ha\***, Bao VQ Bui, Truong Son Hy<br>
 Scientific Reports (Q1)<br>
 [Paper]() · [Code]()
 </div>
