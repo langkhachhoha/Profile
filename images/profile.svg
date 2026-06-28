@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 350 350">
+  <rect width="350" height="350" fill="#e8eaed"/>
+  <circle cx="175" cy="140" r="62" fill="#b9bec4"/>
+  <path d="M175 215c-62 0-112 42-112 95v40h224v-40c0-53-50-95-112-95z" fill="#b9bec4"/>
+  <text x="175" y="335" font-family="-apple-system, Arial, sans-serif" font-size="18" fill="#898c8f" text-anchor="middle">your photo</text>
+</svg>
