@@ -8,9 +8,9 @@ minimal_mistakes_skin   : "default"   # air, aqua, contrast, dark, dirt, neon, m
 
 # Site
 locale                  : "en-US"
-title                   : "Homepage"
+title                   : "Ha Minh Hieu - Homepage"
 title_separator         : "-"
-name                    : "Ha Minh Hieu - Homepage"
+name                    : "Ha Minh Hieu"
 description             : "Personal academic website of Ha Minh Hieu."
 url                     : "https://langkhachhoha.github.io"
 baseurl                 : "/Profile"
@@ -36,21 +36,21 @@ plugins:
 author:
   name             : "Ha Minh Hieu"
   avatar           : "/assets/images/bio-photo.jpeg"
-  bio              : "Researcher / Engineer"
+  bio              : "AI Researcher / Engineer"
   location         : "Hanoi, Vietnam"
   links:
     - label: "Email"
       icon:  "fas fa-fw fa-envelope-square"
-      url:   "mailto:your.email@example.com"
+      url:   "mailto:haminhhieu1005@gmail.com"
     - label: "Google Scholar"
       icon:  "fas fa-fw fa-graduation-cap"
-      url:   "https://scholar.google.com/"
+      url:   "https://scholar.google.com/citations?user=Xqw8CNsAAAAJ&hl=en"
     - label: "GitHub"
       icon:  "fab fa-fw fa-github"
       url:   "https://github.com/langkhachhoha"
     - label: "LinkedIn"
       icon:  "fab fa-fw fa-linkedin"
-      url:   "https://www.linkedin.com/"
+      url:   "https://www.linkedin.com/in/haminhhieu1005/"
 
 # Site Footer
 footer:
