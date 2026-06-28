@@ -3,143 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ha Minh Hieu - Homepage</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <title>Ha Minh Hieu</title>
+    <link rel="stylesheet" href="style.css?v=4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav-menu">
-                <li><a href="#home">Homepage</a></li>
-                <li><a href="#biography">Biography</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#honors">Honors and Awards</a></li>
-                <li><a href="cv.pdf" target="_blank">CV</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
 
-    <!-- Main Content -->
-    <div class="main-wrapper">
-        <div class="container">
-            <!-- Header Section -->
-            <section id="home" class="header-section">
-                <div class="profile-header">
-                    <div class="profile-left">
-                        <img src="https://via.placeholder.com/200" alt="Ha Minh Hieu" class="profile-photo">
-                    </div>
-                    <div class="profile-right">
-                        <h1 class="profile-name">Ha Minh Hieu</h1>
-                        <ul class="profile-info">
-                            <li><i class="fas fa-briefcase"></i> Software Engineer / AI Researcher</li>
-                            <li><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam</li>
-                            <li class="social-links">
-                                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
-                                <a href="#" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a>
-                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i> Github</a>
-                                <a href="#" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="page-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <!-- Profile Image -->
+                <div class="profile-image-wrapper">
+                    <img src="https://via.placeholder.com/200" alt="Ha Minh Hieu" class="profile-image">
                 </div>
+
+                <!-- Name and Title -->
+                <h1 class="profile-name">Ha Minh Hieu</h1>
+                <p class="profile-title">Software Engineer / AI Researcher</p>
+                <p class="profile-location"><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam</p>
+
+                <!-- Bio -->
+                <div class="profile-bio">
+                    <p>AI researcher focused on machine learning and natural language processing. Currently working on [Your Focus Area].</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="sidebar-nav">
+                    <a href="#about">About</a>
+                    <a href="#research">Research</a>
+                    <a href="#news">News</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#honors">Honors</a>
+                    <a href="cv.pdf" target="_blank">CV</a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <h2>About</h2>
+                <p>I am a [Your Position] at [Your Organization]. My research interests lie in the intersection of [Your Interests]. I am passionate about developing practical AI systems that can make a positive impact.</p>
+                <p>I have conducted research on [Your Research Area], worked on [Your Projects], and contributed to [Your Contributions]. My work centers on building and evaluating models in [Your Focus Area].</p>
+                <p>I am fortunate to be supervised/mentored by [Your Advisors/Mentors].</p>
             </section>
 
-            <!-- Biography Section -->
-            <section id="biography" class="content-section">
-                <h2>Biography</h2>
-                <p>Hi there, welcome to my personal page!</p>
-                <p>I am currently a Software Engineer at [Your Company], Vietnam. I hold a Master's degree in [Your Field] and a Bachelor's degree in [Your Field] under the supervision of [Your Advisor] at [Your University], Vietnam.</p>
-                <p>My research interests lie in the intersection of optimization, artificial intelligence, and machine learning. I am interested in the topics of [Your Topics]. Currently, I am focusing on [Your Current Focus] and their applications in [Your Applications].</p>
+            <!-- Research Interest Section -->
+            <section id="research" class="content-section">
+                <h2>Research Interest</h2>
+                <ul class="interest-list">
+                    <li>Machine Learning and Deep Learning</li>
+                    <li>Natural Language Processing and Large Language Models</li>
+                    <li>Computer Vision and Multimodal AI</li>
+                    <li>AI for Social Good and Ethics</li>
+                </ul>
             </section>
 
             <!-- News Section -->
             <section id="news" class="content-section">
-                <h2>🔥 News</h2>
+                <h2>News</h2>
                 <ul class="news-list">
-                    <li><em>2025.07</em>: 🏆 <strong>First Prize</strong> in Competition at <strong>Conference 2025</strong> (<em>rank A</em>)!!</li>
-                    <li><em>2025.05</em>: 🎉🎉 Our paper "Paper Title Here" has been accepted at <strong>Conference 2025</strong> (<em>rank A*</em>)!</li>
-                    <li><em>2025.04</em>: 🎉🎉 Our paper "Paper Title Here" received <strong>Best Paper Award</strong> at <strong>Conference 2025</strong> (<em>rank A*</em>)!</li>
-                    <li><em>2024.02</em>: 🎉🎉 Our paper "Paper Title Here" has been published at <strong>Journal Name</strong> (<em>rank Q1, IF: 8.0</em>)!</li>
-                    <li><em>2023.03</em>: 🎉🎉 Our paper "Paper Title Here" has been accepted at <strong>Conference 2023</strong> (<em>rank A</em>)!</li>
-                    <li><em>2023.01</em>: 🎉🎉 Our paper "Paper Title Here" has been accepted at <strong>Conference 2023</strong> (<em>rank A</em>)!</li>
+                    <li><strong>Jun 2026:</strong> Our paper "Paper Title" has been accepted at Conference 2026.</li>
+                    <li><strong>May 2026:</strong> Started new position at [Company Name].</li>
+                    <li><strong>Jan 2026:</strong> Our work "Project Name" received Best Paper Award at Conference 2026.</li>
+                    <li><strong>Nov 2025:</strong> Paper accepted for oral presentation at Conference 2025.</li>
                 </ul>
             </section>
 
             <!-- Publications Section -->
             <section id="publications" class="content-section">
-                <h2>📝 Publications</h2>
+                <h2>Publications</h2>
                 
-                <h3>Conferences</h3>
-                <ul class="publication-list">
-                    <li>Paper Title Here, by Author 1, <strong>Ha Hieu</strong>, Author 3, Conference Full Name (<em>Conference Abbreviation 2025</em>)</li>
-                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Conference Full Name (<em>Conference Abbreviation 2025</em>) <strong>Best Paper Honorable Mention</strong></li>
-                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Conference Full Name (<em>Conference Abbreviation 2023</em>) [<a href="#">paper</a>, <a href="#">poster</a>]</li>
-                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Conference Full Name (<em>Conference Abbreviation 2023</em>) [<a href="#">paper</a>, <a href="#">poster</a>]</li>
-                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Conference Full Name (<em>Conference Abbreviation 2021</em>)</li>
-                </ul>
+                <h3>Conference Papers</h3>
+                <div class="publication-item">
+                    <p class="pub-title">Paper Title Here</p>
+                    <p class="pub-authors"><strong>Ha Minh Hieu</strong>, Author 2, Author 3</p>
+                    <p class="pub-venue">Conference Name 2026</p>
+                    <div class="pub-links">
+                        <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="#" class="pub-link"><i class="fas fa-code"></i> Code</a>
+                        <a href="#" class="pub-link"><i class="fas fa-presentation"></i> Slides</a>
+                    </div>
+                </div>
 
-                <h3>Journals</h3>
-                <ul class="publication-list">
-                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Author 5, Author 6, <em>Journal Name</em> (2025)</li>
-                    <li>Paper Title Here, by Author 1, Author 2, Author 3, <strong>Ha Hieu</strong>, Author 5, <em>Journal Name</em></li>
-                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, <em>Journal Name</em></li>
-                    <li>Paper Title Here, by Author 1, Author 2, Author 3, Author 4, <strong>Ha Hieu</strong>, Author 6, <em>Journal Name</em></li>
-                    <li>Paper Title Here, by Author 1, <strong>Ha Hieu</strong>, Author 3, <em>Journal Name</em></li>
-                </ul>
+                <div class="publication-item">
+                    <p class="pub-title">Another Paper Title</p>
+                    <p class="pub-authors">Author 1, <strong>Ha Minh Hieu</strong>, Author 3</p>
+                    <p class="pub-venue">Conference Name 2025</p>
+                    <div class="pub-links">
+                        <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="#" class="pub-link"><i class="fas fa-code"></i> Code</a>
+                    </div>
+                </div>
 
-                <h3>Preprints</h3>
-                <ul class="publication-list">
-                    <li>Paper Title Here, by Author 1, Author 2, Author 3, Author 4, <strong>Ha Hieu</strong>, Author 6, <em>under review</em></li>
-                    <li>Paper Title Here, by Author 1, Author 2, <strong>Ha Hieu</strong>, Author 4, <em>under review</em></li>
-                    <li>Paper Title Here, by <strong>Ha Hieu</strong> et al.,</li>
-                    <li>Paper Title Here, by <strong>Ha Hieu</strong> et al.,</li>
-                </ul>
+                <h3>Journal Papers</h3>
+                <div class="publication-item">
+                    <p class="pub-title">Journal Paper Title</p>
+                    <p class="pub-authors"><strong>Ha Minh Hieu</strong>, Author 2, Author 3, Author 4</p>
+                    <p class="pub-venue">Journal Name, 2025</p>
+                    <div class="pub-links">
+                        <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                    </div>
+                </div>
             </section>
 
             <!-- Honors and Awards Section -->
             <section id="honors" class="content-section">
-                <h2>🎖 Honors and Awards</h2>
-                <ul class="timeline-list">
-                    <li><em>2025</em>: <strong>Best Paper Honorable Mention</strong> - Conference Name 2025</li>
-                    <li><em>2025</em>: <strong>First Runner-up</strong> in Competition Name - Conference Name (Conference 2025)</li>
-                    <li><em>2025</em>: <strong>First Runner-up</strong> in Competition Name - Conference Name (Conference 2025)</li>
-                    <li><em>2023</em>: Scholarship for Master and Doctoral Training in Vietnam (~2,500 USD) - Foundation Name (VinIF)</li>
-                    <li><em>2022, 2021</em>: <strong>First Prize</strong> in Competition Name - Conference Name, IEEE Congress</li>
-                    <li><em>2021</em>: Full Scholarship for Master and Doctoral Training in Vietnam (~5,000 USD) - Foundation Name (VinIF)</li>
-                    <li><em>2021</em>: <strong>Best Thesis Presentation Award</strong> - School Name - University Name</li>
-                    <li><em>2021</em>: <strong>Second Prize</strong> in the Scientific Research Student Award - University Name</li>
-                    <li><em>2021</em>: Excellent Scholarship for the academic year (~1,000 USD) - University Name</li>
-                    <li><em>2020</em>: <strong>Runner up</strong> in Competition Name - Conference 2020</li>
-                    <li><em>2020</em>: <strong>Third Prize</strong> in Competition Name - Conference 2020</li>
-                    <li><em>2017</em>: Excellent score in National University Exam (30.4/30, 1 regional priority point)</li>
-                    <li><em>2014, 2015, 2017</em>: <strong>First Prize</strong> in Provincial Excellent Student in Mathematics</li>
+                <h2>Selected Highlights</h2>
+                <ul class="highlights-list">
+                    <li><strong>Best Paper Award:</strong> Conference Name 2026</li>
+                    <li><strong>Full Scholarship:</strong> Organization Name covering tuition and expenses</li>
+                    <li><strong>First Prize:</strong> Competition Name at Event 2025</li>
+                    <li><strong>Runner-up:</strong> Hackathon/Competition Name 2024</li>
                 </ul>
             </section>
 
-            <!-- Experiences Section -->
-            <section id="experiences" class="content-section">
-                <h2>💻 Experiences</h2>
-                <ul class="timeline-list">
-                    <li><em>2022.09 - present</em>: AI Researcher (previously AI Research Resident) at Company Name</li>
-                    <li><em>2022.06 - 2022.09</em>: Trainee at Company Name - Program Name</li>
-                    <li><em>2020.11 - 2021.03</em>: Teaching Assistant at School Name, HUST</li>
-                    <li><em>2019.03 - 2022.06</em>: Research Assistant at The Laboratory Name and The Research Center Name, HUST</li>
-                </ul>
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                    <p><i class="fab fa-github"></i> <a href="#" target="_blank">github.com/yourusername</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="#" target="_blank">linkedin.com/in/yourprofile</a></p>
+                    <p><i class="fas fa-graduation-cap"></i> <a href="#" target="_blank">Google Scholar</a></p>
+                </div>
             </section>
-        </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2026 Ha Minh Hieu. Last updated: <span id="last-updated"></span></p>
+            </footer>
+        </main>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <hr>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
