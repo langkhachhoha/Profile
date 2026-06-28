@@ -26,17 +26,15 @@ research journey.
 My research interests lie at the intersection of optimization, artificial intelligence,
 and machine learning, with a focus on the following directions:
 
-**AI-Driven Research for Systems.** I am interested in using LLM-based agents to
-automatically design, evaluate, and refine algorithms for complex system problems such as
-scheduling, resource allocation, and load balancing.
-
-**AI for Optimization.** I aim to harness LLMs to solve challenging optimization problems,
-especially combinatorial optimization and robotics navigation, by generating efficient and
-adaptive heuristics.
-
-**AI for Scientific Discovery.** I am interested in building cost-efficient AI agents that
-support scientific discovery through hypothesis generation, experiment design, simulation,
-and iterative refinement.
+- **AI-Driven Research for Systems.** I am interested in using LLM-based agents to
+  automatically design, evaluate, and refine algorithms for complex system problems such as
+  scheduling, resource allocation, and load balancing.
+- **AI for Optimization.** I aim to harness LLMs to solve challenging optimization
+  problems, especially combinatorial optimization and robotics navigation, by generating
+  efficient and adaptive heuristics.
+- **AI for Scientific Discovery.** I am interested in building cost-efficient AI agents
+  that support scientific discovery through hypothesis generation, experiment design,
+  simulation, and iterative refinement.
 
 ## News
 
