@@ -6,8 +6,6 @@ author_profile: true
 toc: false
 ---
 
-<p class="pub-note"><sup>*</sup> denotes equal contribution.</p>
-
 ## Conferences
 
 <div class="pub" markdown="1">
@@ -28,7 +26,7 @@ toc: false
 
 <div class="pub" markdown="1">
 **FFTMed: Leveraging Fast-Fourier Transform for a Lightweight and Adversarial-Resilient Medical Image Segmentation Framework**<br>
-Viet Tien Pham<sup>*</sup>, **Minh Hieu Ha**<sup>*</sup>, Bao VQ Bui, Truong Son Hy<br>
+Viet Tien Pham, **Minh Hieu Ha**, Bao VQ Bui, Truong Son Hy<br>
 *Scientific Reports* — rank Q1<br>
 [Paper]() · [Code]()
 </div>
