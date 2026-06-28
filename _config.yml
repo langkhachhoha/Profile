@@ -1,0 +1,81 @@
+# ----------------------------------------------------------------------
+# Site settings  —  Minimal Mistakes (remote theme)
+# Docs: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+# ----------------------------------------------------------------------
+
+remote_theme            : "mmistakes/minimal-mistakes@4.28.0"
+minimal_mistakes_skin   : "default"   # air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+
+# Site
+locale                  : "en-US"
+title                   : "Ha Minh Hieu"
+title_separator         : "-"
+name                    : "Ha Minh Hieu"
+description             : "Personal academic website of Ha Minh Hieu."
+url                     : "https://langkhachhoha.github.io"
+baseurl                 : "/Profile"
+repository              : "langkhachhoha/Profile"
+search                  : true
+
+# Build
+markdown                : kramdown
+highlighter             : rouge
+incremental             : false
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+
+# Site Author (sidebar profile card)
+author:
+  name             : "Ha Minh Hieu"
+  avatar           : "/assets/images/bio-photo.jpeg"
+  bio              : "Researcher / Engineer"
+  location         : "Hanoi, Vietnam"
+  links:
+    - label: "Email"
+      icon:  "fas fa-fw fa-envelope-square"
+      url:   "mailto:your.email@example.com"
+    - label: "Google Scholar"
+      icon:  "fas fa-fw fa-graduation-cap"
+      url:   "https://scholar.google.com/"
+    - label: "GitHub"
+      icon:  "fab fa-fw fa-github"
+      url:   "https://github.com/langkhachhoha"
+    - label: "LinkedIn"
+      icon:  "fab fa-fw fa-linkedin"
+      url:   "https://www.linkedin.com/"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon:  "fab fa-fw fa-github"
+      url:   "https://github.com/langkhachhoha"
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Outputting
+timezone: Asia/Ho_Chi_Minh
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github

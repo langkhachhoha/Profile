@@ -1,0 +1,6 @@
+# Top (masthead) navigation links
+main:
+  - title: "Publications"
+    url: /publications/
+  - title: "CV"
+    url: /cv.pdf
