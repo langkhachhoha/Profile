@@ -1,174 +1,87 @@
-# Ha Hieu - Personal Profile Website
+# Ha Hieu - Personal Profile Website 🌙
 
-Trang web profile cá nhân với layout giống hệt https://daotranbk.github.io/
+Trang web profile cá nhân với thiết kế **Dark Theme** sang trọng, giống layout của https://daotranbk.github.io/
 
-## 📐 Layout
+## 🎨 Dark Theme Design
 
-- **Navigation bar**: Ngang ở trên cùng với các links
-- **Header**: Ảnh tròn bên trái, tên và thông tin bên phải
-- **Content sections**: Biography, News, Publications, Honors and Awards, Educations, Experiences
-- **Footer**: Đơn giản với đường kẻ ngang
+- **Background**: Tối (#0f0f1e) 
+- **Text**: Sáng (#e8e8e8)
+- **Accent Color**: Hồng (#e94560)
+- **Link Color**: Xanh (#3b82f6)
+- **Modern & Professional**: Shadows, borders, và hover effects tinh tế
 
 ## 📁 Cấu Trúc File
 
 ```
 PROFILE/
 ├── index.html          # File HTML chính
-├── style.css           # File CSS cho giao diện
-├── script.js           # JavaScript cho navigation
-├── README.md           # File này
-└── DEPLOY_GUIDE.md     # Hướng dẫn deploy
+├── style.css           # File CSS Dark Theme
+├── script.js           # JavaScript
+├── cv.pdf              # File CV của bạn (cần thêm)
+└── README.md           # File này
 ```
 
-## 🎯 Cập Nhật Thông Tin
+## 🚀 Thêm CV của bạn
 
-### 1. Header (Dòng 34-49)
+**Option 1: Upload PDF trực tiếp** (Khuyên dùng)
+1. Export CV của bạn ra file PDF
+2. Đổi tên thành `cv.pdf`
+3. Copy vào folder PROFILE
+4. Commit và push lên GitHub
 
-Thay đổi:
-- **Ảnh**: Dòng 35 - `<img src="https://via.placeholder.com/200"` → thay bằng đường dẫn ảnh của bạn
-- **Tên**: Dòng 39 - `<h1 class="profile-name">Ha Hieu</h1>`
-- **Chức danh**: Dòng 41 - `<li>Software Engineer / AI Researcher</li>`
-- **Địa điểm**: Dòng 42 - `<li>Hanoi, Vietnam</li>`
-- **Social links**: Dòng 43-48
-
-### 2. Biography (Dòng 54-59)
-
-Viết lại phần giới thiệu về bản thân:
-- Vị trí hiện tại
-- Học vấn
-- Lĩnh vực quan tâm
-- Mục tiêu nghiên cứu
-
-### 3. News (Dòng 62-70)
-
-Format:
+**Option 2: Link CV từ nơi khác**
+Mở `index.html` dòng 20, thay đổi:
 ```html
-<li><em>2025.07</em>: 🏆 <strong>Giải thưởng</strong> tại <strong>Hội nghị</strong> (<em>rank A</em>)!!</li>
+<li><a href="YOUR_CV_LINK" target="_blank">CV</a></li>
 ```
 
-### 4. Publications (Dòng 73-103)
+## 📝 Cập Nhật Thông Tin
 
-Có 3 subsections:
-- **Conferences** (Dòng 76-82)
-- **Journals** (Dòng 84-91)
-- **Preprints** (Dòng 93-98)
+Mở `index.html` và thay đổi:
+- **Ảnh**: Dòng 33
+- **Tên**: Dòng 36
+- **Chức danh**: Dòng 38
+- **Social links**: Dòng 40-45
+- **Biography**: Dòng 54-58
+- **News**: Dòng 64-70
+- **Publications**: Dòng 77-101
+- **Honors**: Dòng 108-121
+- **Experiences**: Dòng 135-140
 
-Format:
-```html
-<li>Paper Title, by <strong>Ha Hieu</strong>, Co-Author, Conference (<em>Abbreviation 2025</em>)</li>
-```
+## 🎨 Tùy Chỉnh Màu
 
-### 5. Honors and Awards (Dòng 106-121)
-
-Format:
-```html
-<li><em>2025</em>: <strong>Giải thưởng</strong> - Tên hội nghị/tổ chức</li>
-```
-
-### 6. Educations (Dòng 124-128)
-
-Format:
-```html
-<li><em>2022.01 - 2023.10</em>: Bằng cấp tại Trường đại học.</li>
-```
-
-### 7. Experiences (Dòng 131-137)
-
-Format:
-```html
-<li><em>2022.09 - present</em>: Vị trí tại Công ty</li>
-```
-
-## 📸 Thêm Ảnh Đại Diện
-
-### Cách 1: Dùng ảnh local
-1. Đặt ảnh của bạn (ảnh vuông, tối thiểu 400x400px) vào folder PROFILE
-2. Đặt tên: `profile.jpg` hoặc `profile.png`
-3. Trong `index.html` dòng 35, thay:
-   ```html
-   <img src="profile.jpg" alt="Ha Hieu" class="profile-photo">
-   ```
-
-### Cách 2: Dùng link online
-Upload ảnh lên GitHub hoặc dịch vụ khác, rồi dùng link trực tiếp.
-
-## 🎨 Tùy Chỉnh Màu Sắc
-
-Mở `style.css` và sửa dòng 9-17:
+Mở `style.css` dòng 8-21 để đổi màu:
 
 ```css
 :root {
-    --primary-color: #2c3e50;      /* Màu tiêu đề */
-    --text-color: #333;            /* Màu chữ */
-    --light-text: #666;            /* Màu chữ nhạt */
-    --bg-color: #fff;              /* Màu nền */
-    --link-color: #0366d6;         /* Màu link */
-    --link-hover: #0056b3;         /* Màu link khi hover */
+    --highlight-color: #e94560;  /* Màu highlight */
+    --link-color: #3b82f6;       /* Màu link */
+    --text-color: #e8e8e8;       /* Màu chữ */
 }
 ```
 
 ## 🌐 Deploy Lên GitHub Pages
 
-### Trang web đã được push lên GitHub!
-
-- **Repository**: https://github.com/langkhachhoha/Profile
-- **Trang web sẽ online tại**: https://langkhachhoha.github.io/Profile/
-
-### Để bật GitHub Pages:
-
-**Option 1: GitHub Actions (Đã setup sẵn)**
 1. Vào: https://github.com/langkhachhoha/Profile/settings/pages
-2. Trong **"Source"**: Chọn "**GitHub Actions**"
-3. Vào tab Actions: https://github.com/langkhachhoha/Profile/actions
-4. Đợi workflow chạy xong (màu xanh ✅)
-5. Trang web sẽ online!
+2. **Source**: Chọn "**GitHub Actions**"
+3. Trang web online tại: https://langkhachhoha.github.io/Profile/
 
-**Option 2: Deploy from branch**
-1. Vào: https://github.com/langkhachhoha/Profile/settings/pages
-2. Trong **"Source"**: Chọn "Deploy from a branch"
-3. **Branch**: Chọn `main`
-4. **Folder**: Chọn `/ (root)`
-5. Click **Save**
-6. Đợi 1-2 phút
-
-## 🔄 Cập Nhật Trang Web
-
-Sau khi chỉnh sửa nội dung:
+## 🔄 Cập Nhật
 
 ```bash
 git add .
-git commit -m "Update profile information"
+git commit -m "Update profile"
 git push
 ```
 
-Đợi 1-2 phút, trang web tự động cập nhật!
+## ✨ Tính Năng
 
-## 📱 Responsive Design
-
-- 💻 **Desktop**: Layout đầy đủ với ảnh bên trái, thông tin bên phải
-- 📱 **Tablet**: Giảm kích thước, layout vẫn ngang
-- 📱 **Mobile**: Ảnh và thông tin xếp dọc, navigation menu dọc
-
-## ✅ Checklist
-
-- [ ] Đã thay đổi tên và chức danh
-- [ ] Đã thêm ảnh đại diện
-- [ ] Đã cập nhật Biography
-- [ ] Đã thêm News
-- [ ] Đã thêm Publications (Conferences, Journals, Preprints)
-- [ ] Đã thêm Honors and Awards
-- [ ] Đã thêm Educations
-- [ ] Đã thêm Experiences
-- [ ] Đã cập nhật social links
-- [ ] Đã bật GitHub Pages
-- [ ] Đã kiểm tra trên mobile
-
-## 🔗 Links
-
-- **GitHub Repository**: https://github.com/langkhachhoha/Profile
-- **Website**: https://langkhachhoha.github.io/Profile/ (sau khi bật Pages)
-- **Template based on**: https://daotranbk.github.io/
+- ✅ Dark Theme đẹp mắt
+- ✅ CV link download/view
+- ✅ Responsive design
+- ✅ Icon đầy đủ
+- ✅ Smooth scrolling
 
 ---
 
-**Chúc bạn thành công! 🚀**
+**Trang web Dark Theme của bạn! 🌙✨**
