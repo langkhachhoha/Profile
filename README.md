@@ -1,13 +1,13 @@
 # Ha Hieu - Personal Profile Website
 
-Trang web profile cá nhân với thiết kế gọn gàng, chuyên nghiệp theo phong cách academic portfolio.
+Trang web profile cá nhân với layout giống hệt https://daotranbk.github.io/
 
-## 🎨 Thiết Kế
+## 📐 Layout
 
-- **Layout**: Sidebar bên trái với navigation, content area bên phải
-- **Style**: Clean, minimalist, professional
-- **Responsive**: Tự động điều chỉnh trên mobile, tablet, desktop
-- **Sections**: About me, Research Interests, News, Publications, Experience
+- **Navigation bar**: Ngang ở trên cùng với các links
+- **Header**: Ảnh tròn bên trái, tên và thông tin bên phải
+- **Content sections**: Biography, News, Publications, Honors and Awards, Educations, Experiences
+- **Footer**: Đơn giản với đường kẻ ngang
 
 ## 📁 Cấu Trúc File
 
@@ -20,65 +20,90 @@ PROFILE/
 └── DEPLOY_GUIDE.md     # Hướng dẫn deploy
 ```
 
-## 🚀 Cách Sử Dụng
+## 🎯 Cập Nhật Thông Tin
 
-### 1. Xem Local
+### 1. Header (Dòng 34-49)
 
-Mở file `index.html` trong trình duyệt để xem trang web.
+Thay đổi:
+- **Ảnh**: Dòng 35 - `<img src="https://via.placeholder.com/200"` → thay bằng đường dẫn ảnh của bạn
+- **Tên**: Dòng 39 - `<h1 class="profile-name">Ha Hieu</h1>`
+- **Chức danh**: Dòng 41 - `<li>Software Engineer / AI Researcher</li>`
+- **Địa điểm**: Dòng 42 - `<li>Hanoi, Vietnam</li>`
+- **Social links**: Dòng 43-48
 
-### 2. Cập Nhật Thông Tin Cá Nhân
+### 2. Biography (Dòng 54-59)
 
-Mở file `index.html` và thay đổi các thông tin sau:
+Viết lại phần giới thiệu về bản thân:
+- Vị trí hiện tại
+- Học vấn
+- Lĩnh vực quan tâm
+- Mục tiêu nghiên cứu
 
-#### Sidebar:
-- **Ảnh đại diện**: Dòng 17, thay `https://via.placeholder.com/200` bằng đường dẫn ảnh của bạn
-- **Tên**: Dòng 18, thay "Ha Hieu"
-- **Chức danh**: Dòng 19, thay "Software Engineer"
-- **Địa điểm**: Dòng 26
-- **Social links**: Dòng 28-31
+### 3. News (Dòng 62-70)
 
-#### About Me Section (Dòng 54-64):
-Viết giới thiệu về bản thân, học vấn, kinh nghiệm.
+Format:
+```html
+<li><em>2025.07</em>: 🏆 <strong>Giải thưởng</strong> tại <strong>Hội nghị</strong> (<em>rank A</em>)!!</li>
+```
 
-#### Research Interests Section (Dòng 67-86):
-Liệt kê các lĩnh vực nghiên cứu hoặc chuyên môn của bạn.
+### 4. Publications (Dòng 73-103)
 
-#### News Section (Dòng 89-107):
-Thêm các tin tức, thành tích, giải thưởng mới nhất.
+Có 3 subsections:
+- **Conferences** (Dòng 76-82)
+- **Journals** (Dòng 84-91)
+- **Preprints** (Dòng 93-98)
 
-#### Publications Section (Dòng 110-155):
-Thêm các bài báo, công trình xuất bản của bạn.
+Format:
+```html
+<li>Paper Title, by <strong>Ha Hieu</strong>, Co-Author, Conference (<em>Abbreviation 2025</em>)</li>
+```
 
-#### Experience Section (Dòng 158-190):
-Liệt kê kinh nghiệm làm việc của bạn.
+### 5. Honors and Awards (Dòng 106-121)
 
-### 3. Thêm Ảnh Đại Diện
+Format:
+```html
+<li><em>2025</em>: <strong>Giải thưởng</strong> - Tên hội nghị/tổ chức</li>
+```
 
-1. Chuẩn bị ảnh của bạn (ảnh vuông, tối thiểu 400x400px)
-2. Đổi tên ảnh thành `profile.jpg` hoặc `profile.png`
-3. Copy ảnh vào folder PROFILE
-4. Trong `index.html`, dòng 17, thay:
+### 6. Educations (Dòng 124-128)
+
+Format:
+```html
+<li><em>2022.01 - 2023.10</em>: Bằng cấp tại Trường đại học.</li>
+```
+
+### 7. Experiences (Dòng 131-137)
+
+Format:
+```html
+<li><em>2022.09 - present</em>: Vị trí tại Công ty</li>
+```
+
+## 📸 Thêm Ảnh Đại Diện
+
+### Cách 1: Dùng ảnh local
+1. Đặt ảnh của bạn (ảnh vuông, tối thiểu 400x400px) vào folder PROFILE
+2. Đặt tên: `profile.jpg` hoặc `profile.png`
+3. Trong `index.html` dòng 35, thay:
    ```html
-   <img src="https://via.placeholder.com/200" alt="Ha Hieu" class="profile-image">
+   <img src="profile.jpg" alt="Ha Hieu" class="profile-photo">
    ```
-   Thành:
-   ```html
-   <img src="profile.jpg" alt="Ha Hieu" class="profile-image">
-   ```
+
+### Cách 2: Dùng link online
+Upload ảnh lên GitHub hoặc dịch vụ khác, rồi dùng link trực tiếp.
 
 ## 🎨 Tùy Chỉnh Màu Sắc
 
-Mở file `style.css` và sửa các biến trong phần `:root` (dòng 9-17):
+Mở `style.css` và sửa dòng 9-17:
 
 ```css
 :root {
-    --primary-color: #2c3e50;      /* Màu chữ chính */
-    --secondary-color: #3498db;    /* Màu highlight (xanh) */
-    --text-color: #333;            /* Màu chữ thường */
+    --primary-color: #2c3e50;      /* Màu tiêu đề */
+    --text-color: #333;            /* Màu chữ */
     --light-text: #666;            /* Màu chữ nhạt */
-    --border-color: #e1e4e8;       /* Màu viền */
-    --bg-color: #fff;              /* Màu nền chính */
-    --sidebar-bg: #f8f9fa;         /* Màu nền sidebar */
+    --bg-color: #fff;              /* Màu nền */
+    --link-color: #0366d6;         /* Màu link */
+    --link-hover: #0056b3;         /* Màu link khi hover */
 }
 ```
 
@@ -91,67 +116,59 @@ Mở file `style.css` và sửa các biến trong phần `:root` (dòng 9-17):
 
 ### Để bật GitHub Pages:
 
+**Option 1: GitHub Actions (Đã setup sẵn)**
 1. Vào: https://github.com/langkhachhoha/Profile/settings/pages
-2. Trong **"Build and deployment"**:
-   - **Source**: Chọn "GitHub Actions"
-3. Đợi 1-2 phút
-4. Trang web sẽ online!
+2. Trong **"Source"**: Chọn "**GitHub Actions**"
+3. Vào tab Actions: https://github.com/langkhachhoha/Profile/actions
+4. Đợi workflow chạy xong (màu xanh ✅)
+5. Trang web sẽ online!
 
-**Hoặc xem hướng dẫn chi tiết trong file `DEPLOY_GUIDE.md`**
-
-## 📱 Responsive Design
-
-Trang web tự động điều chỉnh trên:
-- 💻 Desktop: Sidebar bên trái, content bên phải
-- 📱 Tablet: Sidebar nhỏ hơn
-- 📱 Mobile: Sidebar chuyển lên trên, content xuống dưới
-
-## ✨ Tính Năng
-
-- ✅ Sidebar navigation với highlight active section
-- ✅ Smooth scrolling giữa các section
-- ✅ Clean, minimalist design
-- ✅ Professional academic portfolio style
-- ✅ Fully responsive
-- ✅ Easy to customize
+**Option 2: Deploy from branch**
+1. Vào: https://github.com/langkhachhoha/Profile/settings/pages
+2. Trong **"Source"**: Chọn "Deploy from a branch"
+3. **Branch**: Chọn `main`
+4. **Folder**: Chọn `/ (root)`
+5. Click **Save**
+6. Đợi 1-2 phút
 
 ## 🔄 Cập Nhật Trang Web
 
-Sau khi chỉnh sửa nội dung, chạy các lệnh sau để cập nhật lên GitHub:
+Sau khi chỉnh sửa nội dung:
 
 ```bash
 git add .
-git commit -m "Update profile content"
+git commit -m "Update profile information"
 git push
 ```
 
-Đợi 1-2 phút, trang web sẽ tự động cập nhật!
+Đợi 1-2 phút, trang web tự động cập nhật!
 
-## 📝 Checklist
+## 📱 Responsive Design
+
+- 💻 **Desktop**: Layout đầy đủ với ảnh bên trái, thông tin bên phải
+- 📱 **Tablet**: Giảm kích thước, layout vẫn ngang
+- 📱 **Mobile**: Ảnh và thông tin xếp dọc, navigation menu dọc
+
+## ✅ Checklist
 
 - [ ] Đã thay đổi tên và chức danh
 - [ ] Đã thêm ảnh đại diện
-- [ ] Đã cập nhật phần About Me
-- [ ] Đã điền Research Interests / Skills
-- [ ] Đã thêm News / Achievements
-- [ ] Đã thêm Publications / Projects
-- [ ] Đã thêm Experience
+- [ ] Đã cập nhật Biography
+- [ ] Đã thêm News
+- [ ] Đã thêm Publications (Conferences, Journals, Preprints)
+- [ ] Đã thêm Honors and Awards
+- [ ] Đã thêm Educations
+- [ ] Đã thêm Experiences
 - [ ] Đã cập nhật social links
 - [ ] Đã bật GitHub Pages
 - [ ] Đã kiểm tra trên mobile
 
-## 🆘 Hỗ Trợ
+## 🔗 Links
 
-Nếu cần thay đổi thêm:
-- Thêm/bớt sections
-- Đổi màu sắc
-- Thay đổi layout
-- Thêm tính năng mới
-
-Hãy cho tôi biết!
+- **GitHub Repository**: https://github.com/langkhachhoha/Profile
+- **Website**: https://langkhachhoha.github.io/Profile/ (sau khi bật Pages)
+- **Template based on**: https://daotranbk.github.io/
 
 ---
 
-**Trang web của bạn đang online tại: https://langkhachhoha.github.io/Profile/**
-
-Chúc bạn thành công! 🚀
+**Chúc bạn thành công! 🚀**
