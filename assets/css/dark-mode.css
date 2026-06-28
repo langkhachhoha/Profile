@@ -1,0 +1,121 @@
+/* =========================================================
+   Light/Dark theme toggle for Minimal Mistakes
+   Dark palette mirrors the theme's built-in "dark" skin.
+   ========================================================= */
+
+html[data-theme="dark"]  { color-scheme: dark; }
+html[data-theme="light"] { color-scheme: light; }
+
+/* ---------- Toggle button (visible in both themes) ---------- */
+.theme-toggle {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1000;
+  width: 2.85rem;
+  height: 2.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  color: #00897b;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease;
+}
+.theme-toggle:hover  { transform: translateY(-2px) rotate(-8deg); }
+.theme-toggle:focus  { outline: 2px solid #00adb5; outline-offset: 2px; }
+
+/* =========================================================
+   DARK THEME
+   bg #252a34 · text #eaeaea · primary #00adb5
+   border #51555d · code #1f242c · footer #1a1d24
+   link #8cd2d5 · link-hover #a9dde0
+   ========================================================= */
+
+html[data-theme="dark"] body {
+  background-color: #252a34;
+  color: #eaeaea;
+}
+
+html[data-theme="dark"] .theme-toggle {
+  background: #1f242c;
+  color: #8cd2d5;
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Masthead / top nav ---------- */
+html[data-theme="dark"] .masthead { border-bottom-color: #51555d; }
+html[data-theme="dark"] .greedy-nav,
+html[data-theme="dark"] .greedy-nav .hidden-links { background-color: #252a34; }
+html[data-theme="dark"] .greedy-nav a,
+html[data-theme="dark"] .greedy-nav .site-title,
+html[data-theme="dark"] .greedy-nav button { color: #eaeaea; }
+html[data-theme="dark"] .greedy-nav a:hover { color: #bbbbbb; }
+html[data-theme="dark"] .greedy-nav .visible-links a:before { background: #00adb5; }
+html[data-theme="dark"] .greedy-nav .hidden-links a:hover { background: #1f242c; color: #eaeaea; }
+
+/* ---------- Content links ---------- */
+html[data-theme="dark"] a { color: #8cd2d5; }
+html[data-theme="dark"] a:hover { color: #a9dde0; }
+html[data-theme="dark"] a.btn { color: #fff; }
+
+/* ---------- Sidebar / author profile ---------- */
+html[data-theme="dark"] .author__name,
+html[data-theme="dark"] .author__bio { color: #eaeaea; }
+html[data-theme="dark"] .author__urls.social-icons a,
+html[data-theme="dark"] .author__urls li i,
+html[data-theme="dark"] .author__urls li .svg-inline--fa { color: #eaeaea; }
+html[data-theme="dark"] .author__avatar img { border-color: #51555d; }
+html[data-theme="dark"] .author__urls {
+  background-color: #2b313c;
+  border-color: #51555d;
+}
+html[data-theme="dark"] .author__urls:before {
+  border-color: transparent transparent #51555d;
+}
+html[data-theme="dark"] .author__urls li { border-color: #51555d; }
+
+/* ---------- Headings, text, meta ---------- */
+html[data-theme="dark"] .page__content,
+html[data-theme="dark"] .page__meta,
+html[data-theme="dark"] .page__title { color: #eaeaea; }
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 { color: #f2f2f2; }
+html[data-theme="dark"] .page__content h2,
+html[data-theme="dark"] h2 { border-bottom-color: #51555d; }
+
+/* ---------- Code ---------- */
+html[data-theme="dark"] code,
+html[data-theme="dark"] pre,
+html[data-theme="dark"] .highlight,
+html[data-theme="dark"] div.highlighter-rouge,
+html[data-theme="dark"] figure.highlight {
+  background-color: #1f242c;
+  color: #eaeaea;
+}
+
+/* ---------- Blockquote / tables / hr ---------- */
+html[data-theme="dark"] blockquote { border-left-color: #51555d; color: #c9c9c9; }
+html[data-theme="dark"] table { color: #eaeaea; border-color: #51555d; }
+html[data-theme="dark"] td,
+html[data-theme="dark"] th { border-color: #51555d; }
+html[data-theme="dark"] thead th,
+html[data-theme="dark"] tr:nth-child(2n) { background-color: #2b313c; }
+html[data-theme="dark"] hr { border-color: #51555d; }
+
+/* ---------- Footer ---------- */
+html[data-theme="dark"] .page__footer {
+  background-color: #1a1d24;
+  color: #cfcfcf;
+}
+html[data-theme="dark"] .page__footer a,
+html[data-theme="dark"] .page__footer-follow .social-icons a { color: #cfcfcf; }
