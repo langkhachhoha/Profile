@@ -1,70 +1,111 @@
-# Ha Hieu - Personal Profile Website 🌙
+# Ha Minh Hieu - Personal Profile Website
 
-Trang web profile cá nhân với thiết kế **Dark Theme** sang trọng, giống layout của https://daotranbk.github.io/
+Trang web profile cá nhân với thiết kế hiện đại, có **Light/Dark Mode Toggle** 🌓
 
-## 🎨 Dark Theme Design
+## ✨ Tính Năng Mới
 
-- **Background**: Tối (#0f0f1e) 
-- **Text**: Sáng (#e8e8e8)
-- **Accent Color**: Hồng (#e94560)
-- **Link Color**: Xanh (#3b82f6)
-- **Modern & Professional**: Shadows, borders, và hover effects tinh tế
+### 🌓 Light/Dark Mode Toggle
+- **Nút toggle** ở góc trên phải để chuyển đổi theme
+- Tự động lưu preference vào browser
+- Animation mượt mà khi chuyển đổi
+- Icon thay đổi: 🌙 (moon) cho light mode, ☀️ (sun) cho dark mode
 
-## 📁 Cấu Trúc File
+### 📐 Layout Mới
+- **Sidebar trái**: Tên, ảnh, tiểu sử, social links, navigation
+- **Main content phải**: Chi tiết về About, Research, News, Publications, Honors
+- Responsive: Tự động điều chỉnh trên mobile
+
+### 🎨 Thiết Kế
+- **Light Mode**: Nền trắng, chữ đen, sang trọng
+- **Dark Mode**: Nền tối, chữ sáng, dễ nhìn ban đêm
+- **Accent Color**: Xanh dương (#3b82f6) cho cả 2 theme
+- Modern UI với shadows, borders, hover effects
+
+## 📁 Cấu Trúc
 
 ```
 PROFILE/
-├── index.html          # File HTML chính
-├── style.css           # File CSS Dark Theme
-├── script.js           # JavaScript
-├── cv.pdf              # File CV của bạn (cần thêm)
-└── README.md           # File này
+├── index.html       # HTML với sidebar layout
+├── style.css        # CSS với light/dark theme
+├── script.js        # JavaScript cho theme toggle
+├── cv.pdf           # CV của bạn
+└── README.md        # File này
 ```
 
-## 🚀 Thêm CV của bạn
+## 🚀 Cách Sử Dụng
 
-**Option 1: Upload PDF trực tiếp** (Khuyên dùng)
-1. Export CV của bạn ra file PDF
-2. Đổi tên thành `cv.pdf`
-3. Copy vào folder PROFILE
-4. Commit và push lên GitHub
+### 1. Cập Nhật Thông Tin
 
-**Option 2: Link CV từ nơi khác**
-Mở `index.html` dòng 20, thay đổi:
-```html
-<li><a href="YOUR_CV_LINK" target="_blank">CV</a></li>
-```
+Mở `index.html`:
 
-## 📝 Cập Nhật Thông Tin
+#### Sidebar (Dòng 17-60):
+- **Ảnh**: Dòng 18
+- **Tên**: Dòng 23 - `Ha Minh Hieu`
+- **Chức danh**: Dòng 24
+- **Địa điểm**: Dòng 25
+- **Bio**: Dòng 29-30
+- **Social links**: Dòng 34-40
 
-Mở `index.html` và thay đổi:
-- **Ảnh**: Dòng 33
-- **Tên**: Dòng 36
-- **Chức danh**: Dòng 38
-- **Social links**: Dòng 40-45
-- **Biography**: Dòng 54-58
-- **News**: Dòng 64-70
-- **Publications**: Dòng 77-101
-- **Honors**: Dòng 108-121
-- **Experiences**: Dòng 135-140
+#### Main Content:
+- **About**: Dòng 67-71
+- **Research Interest**: Dòng 75-82
+- **News**: Dòng 87-92
+- **Publications**: Dòng 97-144
+- **Honors**: Dòng 147-154
 
-## 🎨 Tùy Chỉnh Màu
+### 2. Thêm Ảnh Đại Diện
 
-Mở `style.css` dòng 8-21 để đổi màu:
+1. Đặt ảnh vào folder PROFILE, đặt tên `profile.jpg`
+2. Trong `index.html` dòng 18:
+   ```html
+   <img src="profile.jpg" alt="Ha Minh Hieu" class="profile-image">
+   ```
 
+### 3. Thêm CV
+
+**Option 1**: Đặt file PDF tên `cv.pdf` vào folder
+**Option 2**: Đổi link trong navigation (dòng 55)
+
+## 🎨 Tùy Chỉnh Theme
+
+Mở `style.css`:
+
+### Light Mode Colors (Dòng 10-18):
 ```css
 :root {
-    --highlight-color: #e94560;  /* Màu highlight */
-    --link-color: #3b82f6;       /* Màu link */
-    --text-color: #e8e8e8;       /* Màu chữ */
+    --bg-primary: #ffffff;        /* Nền chính */
+    --text-primary: #2c3e50;      /* Chữ chính */
+    --accent-color: #3b82f6;      /* Màu accent */
 }
 ```
 
-## 🌐 Deploy Lên GitHub Pages
+### Dark Mode Colors (Dòng 20-29):
+```css
+[data-theme="dark"] {
+    --bg-primary: #0f0f1e;        /* Nền tối */
+    --text-primary: #e8e8e8;      /* Chữ sáng */
+    --accent-color: #3b82f6;      /* Màu accent */
+}
+```
+
+## 🌐 Deploy
+
+### GitHub Pages đã được setup!
+
+- **Repository**: https://github.com/langkhachhoha/Profile
+- **Website**: https://langkhachhoha.github.io/Profile/
+
+### Để bật Pages:
 
 1. Vào: https://github.com/langkhachhoha/Profile/settings/pages
-2. **Source**: Chọn "**GitHub Actions**"
-3. Trang web online tại: https://langkhachhoha.github.io/Profile/
+2. **Source**: Chọn "GitHub Actions"
+3. Đợi 1-2 phút
+
+## 📱 Responsive
+
+- **Desktop (>1024px)**: Sidebar 300px trái, content phải
+- **Tablet (768-1024px)**: Sidebar 250px
+- **Mobile (<768px)**: Sidebar trên, content dưới
 
 ## 🔄 Cập Nhật
 
@@ -74,14 +115,28 @@ git commit -m "Update profile"
 git push
 ```
 
-## ✨ Tính Năng
+## ✨ Highlights
 
-- ✅ Dark Theme đẹp mắt
-- ✅ CV link download/view
-- ✅ Responsive design
-- ✅ Icon đầy đủ
-- ✅ Smooth scrolling
+- ✅ **Light/Dark Mode Toggle** với icon thay đổi
+- ✅ **Sidebar Layout** với tên và info bên trái
+- ✅ **Smooth Animations** khi toggle theme
+- ✅ **Auto-save Theme** preference vào localStorage
+- ✅ **Responsive Design** hoàn toàn
+- ✅ **Active Navigation** highlight khi scroll
+- ✅ **Modern UI** với shadows và hover effects
+
+## 🎯 Theme Toggle
+
+**Cách dùng**:
+1. Bấm nút ở góc trên phải
+2. Theme tự động chuyển đổi
+3. Preference được lưu tự động
+4. Lần sau vào lại sẽ nhớ theme đã chọn
+
+**Icon**:
+- 🌙 Moon icon = Light mode (bấm để chuyển sang Dark)
+- ☀️ Sun icon = Dark mode (bấm để chuyển sang Light)
 
 ---
 
-**Trang web Dark Theme của bạn! 🌙✨**
+**Trang web hiện đại với Light/Dark Mode! 🌓✨**
