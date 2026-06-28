@@ -13,31 +13,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Highlight active navigation on scroll
-const sections = document.querySelectorAll('.content-section');
-const navLinks = document.querySelectorAll('.sidebar-nav a');
-
-function updateActiveNav() {
+window.addEventListener('scroll', () => {
     let current = '';
+    const sections = document.querySelectorAll('.content-section, .header-section');
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
         if (window.pageYOffset >= sectionTop - 100) {
             current = section.getAttribute('id');
         }
     });
-    
-    navLinks.forEach(link => {
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
         }
     });
-}
-
-// Update on scroll
-window.addEventListener('scroll', updateActiveNav);
-
-// Update on load
-window.addEventListener('load', updateActiveNav);
+});

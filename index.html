@@ -3,198 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ha Hieu - About me</title>
+    <title>Ha Hieu - Homepage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="page-wrapper">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar-content">
-                <div class="profile-section">
-                    <img src="https://via.placeholder.com/200" alt="Ha Hieu" class="profile-image">
-                    <h1 class="profile-name">Ha Hieu</h1>
-                    <p class="profile-title">Software Engineer</p>
-                    
-                    <div class="follow-btn">
-                        <a href="#" class="btn-follow">Follow</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#home">Homepage</a></li>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#honors">Honors and Awards</a></li>
+                <li><a href="#educations">Educations</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <div class="container">
+            <!-- Header Section -->
+            <section id="home" class="header-section">
+                <div class="profile-header">
+                    <div class="profile-left">
+                        <img src="https://via.placeholder.com/200" alt="Ha Hieu" class="profile-photo">
                     </div>
-                    
-                    <div class="profile-info">
-                        <p><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam</p>
-                        <div class="social-links">
-                            <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i> Email</a>
-                            <a href="#" title="Twitter" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                            <a href="#" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                            <a href="#" title="GitHub" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
+                    <div class="profile-right">
+                        <h1 class="profile-name">Ha Hieu</h1>
+                        <ul class="profile-info">
+                            <li>Software Engineer / AI Researcher</li>
+                            <li>Hanoi, Vietnam</li>
+                            <li class="social-links">
+                                <a href="mailto:your.email@example.com">Email</a>
+                                <a href="#" target="_blank">ResearchGate</a>
+                                <a href="#" target="_blank">LinkedIn</a>
+                                <a href="#" target="_blank">Github</a>
+                                <a href="#" target="_blank">Google Scholar</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+            </section>
 
-                <!-- Navigation -->
-                <nav class="sidebar-nav">
-                    <ul>
-                        <li><a href="#about" class="active">About me</a></li>
-                        <li><a href="#research">Research Interests</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#publications">Publications</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
+            <!-- Biography Section -->
+            <section id="biography" class="content-section">
+                <h2># Biography</h2>
+                <p>Hi there, welcome to my personal page!</p>
+                <p>I am currently a Software Engineer at [Your Company], Vietnam. I hold a Master's degree in [Your Field] and a Bachelor's degree in [Your Field] under the supervision of [Your Advisor] at [Your University], Vietnam.</p>
+                <p>My research interests lie in the intersection of optimization, artificial intelligence, and machine learning. I am interested in the topics of [Your Topics]. Currently, I am focusing on [Your Current Focus] and their applications in [Your Applications].</p>
+            </section>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <div class="content-wrapper">
-                <!-- About Me Section -->
-                <section id="about" class="content-section">
-                    <h2>About me</h2>
-                    <p>
-                        I'm a [Your Position] at [Your Company/Institution]. My current research/work primarily 
-                        centers on [Your Focus Area], with a particular emphasis on its diverse applications, 
-                        including [Application 1], [Application 2] and [Application 3].
-                    </p>
-                    <p>
-                        My academic journey traces back to my Bachelor's in [Your Major] from [Your University]. 
-                        During my studies, I have been fortunate to collaborate with and receive mentorship from 
-                        outstanding researchers/professionals whose guidance has significantly shaped my career journey.
-                    </p>
-                </section>
+            <!-- News Section -->
+            <section id="news" class="content-section">
+                <h2># 🔥 News</h2>
+                <ul class="news-list">
+                    <li><em>2025.07</em>: 🏆 <strong>First Prize</strong> in Competition at <strong>Conference 2025</strong> (<em>rank A</em>)!!</li>
+                    <li><em>2025.05</em>: 🎉🎉 Our paper "Paper Title Here" has been accepted at <strong>Conference 2025</strong> (<em>rank A*</em>)!</li>
+                    <li><em>2025.04</em>: 🎉🎉 Our paper "Paper Title Here" received <strong>Best Paper Award</strong> at <strong>Conference 2025</strong> (<em>rank A*</em>)!</li>
+                    <li><em>2024.02</em>: 🎉🎉 Our paper "Paper Title Here" has been published at <strong>Journal Name</strong> (<em>rank Q1, IF: 8.0</em>)!</li>
+                    <li><em>2023.03</em>: 🎉🎉 Our paper "Paper Title Here" has been accepted at <strong>Conference 2023</strong> (<em>rank A</em>)!</li>
+                    <li><em>2023.01</em>: 🎉🎉 Our paper "Paper Title Here" has been accepted at <strong>Conference 2023</strong> (<em>rank A</em>)!</li>
+                </ul>
+            </section>
 
-                <!-- Research Interests Section -->
-                <section id="research" class="content-section">
-                    <h2>Research Interests</h2>
-                    <p>
-                        My research/work focuses on [Your Main Focus]. I work at the intersection of [Area 1], 
-                        [Area 2], and [Area 3], with an emphasis on building [Your Goal]. I have experience in:
-                    </p>
-                    <ul class="interests-list">
-                        <li>
-                            <strong>[Interest Area 1]</strong>, including methods that improve performance on 
-                            complex tasks and downstream applications
-                        </li>
-                        <li>
-                            <strong>[Interest Area 2]</strong> systems that decompose problems, coordinate 
-                            multiple steps, and interact with external tools
-                        </li>
-                        <li>
-                            <strong>[Interest Area 3]</strong>, where advanced systems are used to assist 
-                            exploration, hypothesis generation, and data-driven discovery
-                        </li>
-                    </ul>
-                </section>
+            <!-- Publications Section -->
+            <section id="publications" class="content-section">
+                <h2># 📝 Publications</h2>
+                
+                <h3>## Conferences</h3>
+                <ul class="publication-list">
+                    <li>Paper Title Here, by Author 1, <strong>Ha Hieu</strong>, Author 3, Conference Full Name (<em>Conference Abbreviation 2025</em>)</li>
+                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Conference Full Name (<em>Conference Abbreviation 2025</em>) <strong>Best Paper Honorable Mention</strong></li>
+                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Conference Full Name (<em>Conference Abbreviation 2023</em>) [<a href="#">paper</a>, <a href="#">poster</a>]</li>
+                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Conference Full Name (<em>Conference Abbreviation 2023</em>) [<a href="#">paper</a>, <a href="#">poster</a>]</li>
+                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Conference Full Name (<em>Conference Abbreviation 2021</em>)</li>
+                </ul>
 
-                <!-- News Section -->
-                <section id="news" class="content-section">
-                    <h2>News</h2>
-                    <ul class="news-list">
-                        <li>
-                            <strong>Jun 2026:</strong> Our work "<strong>Project Name</strong>" got accepted in Conference 2026!
-                        </li>
-                        <li>
-                            <strong>May 2026:</strong> I'm thrilled to start my new position at [Company Name]!
-                        </li>
-                        <li>
-                            <strong>Jan 2026:</strong> Our work "<strong>Project Name</strong>" got accepted in Conference 2026
-                        </li>
-                        <li>
-                            <strong>Nov 2025:</strong> Our paper "<strong>Paper Title</strong>" got accepted in Journal Name!
-                        </li>
-                        <li>
-                            <strong>May 2025:</strong> Started internship at [Company Name]!
-                        </li>
-                    </ul>
-                </section>
+                <h3>## Journals</h3>
+                <ul class="publication-list">
+                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, Author 4, Author 5, Author 6, <em>Journal Name</em> (2025)</li>
+                    <li>Paper Title Here, by Author 1, Author 2, Author 3, <strong>Ha Hieu</strong>, Author 5, <em>Journal Name</em></li>
+                    <li>Paper Title Here, by <strong>Ha Hieu</strong>, Author 2, Author 3, <em>Journal Name</em></li>
+                    <li>Paper Title Here, by Author 1, Author 2, Author 3, Author 4, <strong>Ha Hieu</strong>, Author 6, <em>Journal Name</em></li>
+                    <li>Paper Title Here, by Author 1, <strong>Ha Hieu</strong>, Author 3, <em>Journal Name</em></li>
+                </ul>
 
-                <!-- Publications Section -->
-                <section id="publications" class="content-section">
-                    <h2>Publications</h2>
-                    
-                    <div class="publication-item">
-                        <h3>Paper Title Here</h3>
-                        <p class="authors">
-                            <strong>Ha Hieu</strong>, Co-Author 1, Co-Author 2, Co-Author 3
-                        </p>
-                        <p class="venue">
-                            <em>Conference/Journal Name 2026</em>
-                        </p>
-                        <div class="paper-links">
-                            <a href="#" class="paper-link">Paper</a>
-                            <a href="#" class="paper-link">Code</a>
-                            <a href="#" class="paper-link">Slides</a>
-                        </div>
-                    </div>
+                <h3>## Preprints</h3>
+                <ul class="publication-list">
+                    <li>Paper Title Here, by Author 1, Author 2, Author 3, Author 4, <strong>Ha Hieu</strong>, Author 6, <em>under review</em></li>
+                    <li>Paper Title Here, by Author 1, Author 2, <strong>Ha Hieu</strong>, Author 4, <em>under review</em></li>
+                    <li>Paper Title Here, by <strong>Ha Hieu</strong> et al.,</li>
+                    <li>Paper Title Here, by <strong>Ha Hieu</strong> et al.,</li>
+                </ul>
+            </section>
 
-                    <div class="publication-item">
-                        <h3>Another Paper Title</h3>
-                        <p class="authors">
-                            Co-Author 1, <strong>Ha Hieu</strong>, Co-Author 2
-                        </p>
-                        <p class="venue">
-                            <em>Conference/Journal Name 2025</em>
-                        </p>
-                        <div class="paper-links">
-                            <a href="#" class="paper-link">Paper</a>
-                            <a href="#" class="paper-link">Code</a>
-                        </div>
-                    </div>
+            <!-- Honors and Awards Section -->
+            <section id="honors" class="content-section">
+                <h2># 🎖 Honors and Awards</h2>
+                <ul class="timeline-list">
+                    <li><em>2025</em>: <strong>Best Paper Honorable Mention</strong> - Conference Name 2025</li>
+                    <li><em>2025</em>: <strong>First Runner-up</strong> in Competition Name - Conference Name (Conference 2025)</li>
+                    <li><em>2025</em>: <strong>First Runner-up</strong> in Competition Name - Conference Name (Conference 2025)</li>
+                    <li><em>2023</em>: Scholarship for Master and Doctoral Training in Vietnam (~2,500 USD) - Foundation Name (VinIF)</li>
+                    <li><em>2022, 2021</em>: <strong>First Prize</strong> in Competition Name - Conference Name, IEEE Congress</li>
+                    <li><em>2021</em>: Full Scholarship for Master and Doctoral Training in Vietnam (~5,000 USD) - Foundation Name (VinIF)</li>
+                    <li><em>2021</em>: <strong>Best Thesis Presentation Award</strong> - School Name - University Name</li>
+                    <li><em>2021</em>: <strong>Second Prize</strong> in the Scientific Research Student Award - University Name</li>
+                    <li><em>2021</em>: Excellent Scholarship for the academic year (~1,000 USD) - University Name</li>
+                    <li><em>2020</em>: <strong>Runner up</strong> in Competition Name - Conference 2020</li>
+                    <li><em>2020</em>: <strong>Third Prize</strong> in Competition Name - Conference 2020</li>
+                    <li><em>2017</em>: Excellent score in National University Exam (30.4/30, 1 regional priority point)</li>
+                    <li><em>2014, 2015, 2017</em>: <strong>First Prize</strong> in Provincial Excellent Student in Mathematics</li>
+                </ul>
+            </section>
 
-                    <div class="publication-item">
-                        <h3>Third Paper Title</h3>
-                        <p class="authors">
-                            <strong>Ha Hieu</strong>, Co-Author 1, Co-Author 2
-                        </p>
-                        <p class="venue">
-                            <em>Conference/Journal Name 2024</em>
-                        </p>
-                        <div class="paper-links">
-                            <a href="#" class="paper-link">Paper</a>
-                        </div>
-                    </div>
-                </section>
+            <!-- Educations Section -->
+            <section id="educations" class="content-section">
+                <h2># 📖 Educations</h2>
+                <ul class="timeline-list">
+                    <li><em>2022.01 - 2023.10</em>: Master's degree in Data Science and Artificial Intelligence at School Name, University Name.</li>
+                    <li><em>2017.09 - 2021.10</em>: Bachelor's degree in Computer Science at School Name, University Name (Top 1%).</li>
+                </ul>
+            </section>
 
-                <!-- Experience Section -->
-                <section id="experience" class="content-section">
-                    <h2>Experience</h2>
-                    
-                    <div class="experience-item">
-                        <h3>Position Title</h3>
-                        <p class="company">Company/Institution Name</p>
-                        <p class="duration">Jan 2024 - Present</p>
-                        <p class="description">
-                            Brief description of your role and responsibilities. What you worked on, 
-                            what technologies you used, and what impact you made.
-                        </p>
-                    </div>
-
-                    <div class="experience-item">
-                        <h3>Previous Position</h3>
-                        <p class="company">Previous Company Name</p>
-                        <p class="duration">Jun 2022 - Dec 2023</p>
-                        <p class="description">
-                            Description of your previous role and key achievements.
-                        </p>
-                    </div>
-
-                    <div class="experience-item">
-                        <h3>Internship Position</h3>
-                        <p class="company">Company Name</p>
-                        <p class="duration">Summer 2022</p>
-                        <p class="description">
-                            Description of your internship experience.
-                        </p>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Footer -->
-            <footer class="footer">
-                <p>© 2026 Ha Hieu. Built with ❤️</p>
-            </footer>
-        </main>
+            <!-- Experiences Section -->
+            <section id="experiences" class="content-section">
+                <h2># 💻 Experiences</h2>
+                <ul class="timeline-list">
+                    <li><em>2022.09 - present</em>: AI Researcher (previously AI Research Resident) at Company Name</li>
+                    <li><em>2022.06 - 2022.09</em>: Trainee at Company Name - Program Name</li>
+                    <li><em>2020.11 - 2021.03</em>: Teaching Assistant at School Name, HUST</li>
+                    <li><em>2019.03 - 2022.06</em>: Research Assistant at The Laboratory Name and The Research Center Name, HUST</li>
+                </ul>
+            </section>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <hr>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
