@@ -8,9 +8,9 @@ minimal_mistakes_skin   : "default"   # air, aqua, contrast, dark, dirt, neon, m
 
 # Site
 locale                  : "en-US"
-title                   : "Homepage"
+title                   : "Ha Minh Hieu - Homepage"
 title_separator         : "-"
-name                    : "Ha Minh Hieu - Homepage"
+name                    : "Ha Minh Hieu"
 description             : "Personal academic website of Ha Minh Hieu."
 url                     : "https://langkhachhoha.github.io"
 baseurl                 : "/Profile"
