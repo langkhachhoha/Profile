@@ -1,159 +1,157 @@
-# Trang Web Profile Cá Nhân
+# Ha Hieu - Personal Profile Website
 
-Đây là template trang web profile cá nhân được thiết kế theo mẫu trang web học thuật chuyên nghiệp.
+Trang web profile cá nhân với thiết kế gọn gàng, chuyên nghiệp theo phong cách academic portfolio.
+
+## 🎨 Thiết Kế
+
+- **Layout**: Sidebar bên trái với navigation, content area bên phải
+- **Style**: Clean, minimalist, professional
+- **Responsive**: Tự động điều chỉnh trên mobile, tablet, desktop
+- **Sections**: About me, Research Interests, News, Publications, Experience
 
 ## 📁 Cấu Trúc File
 
 ```
 PROFILE/
-├── index.html       # File HTML chính
-├── style.css        # File CSS cho giao diện
-└── README.md        # Hướng dẫn sử dụng
+├── index.html          # File HTML chính
+├── style.css           # File CSS cho giao diện
+├── script.js           # JavaScript cho navigation
+├── README.md           # File này
+└── DEPLOY_GUIDE.md     # Hướng dẫn deploy
 ```
 
 ## 🚀 Cách Sử Dụng
 
-### 1. Mở File trong Trình Duyệt
+### 1. Xem Local
 
-Chỉ cần double-click vào file `index.html` để mở trang web trong trình duyệt của bạn.
+Mở file `index.html` trong trình duyệt để xem trang web.
 
-### 2. Tùy Chỉnh Thông Tin Cá Nhân
+### 2. Cập Nhật Thông Tin Cá Nhân
 
 Mở file `index.html` và thay đổi các thông tin sau:
 
-#### Thông Tin Header:
-- **Ảnh đại diện**: Thay thế `https://via.placeholder.com/200` bằng đường dẫn ảnh của bạn
-- **Tên**: Thay "Your Full Name" bằng tên của bạn
-- **Chức danh**: Thay "AI Researcher / Software Engineer" bằng chức danh của bạn
-- **Địa điểm**: Cập nhật địa điểm của bạn
-- **Liên kết mạng xã hội**: Thêm links đến email, ResearchGate, LinkedIn, Github, Google Scholar của bạn
+#### Sidebar:
+- **Ảnh đại diện**: Dòng 17, thay `https://via.placeholder.com/200` bằng đường dẫn ảnh của bạn
+- **Tên**: Dòng 18, thay "Ha Hieu"
+- **Chức danh**: Dòng 19, thay "Software Engineer"
+- **Địa điểm**: Dòng 26
+- **Social links**: Dòng 28-31
 
-#### Biography:
-Viết lại phần giới thiệu về bản thân, bao gồm:
-- Vị trí công việc hiện tại
-- Bằng cấp và trường học
-- Lĩnh vực nghiên cứu và sở thích
-- Mục tiêu nghiên cứu hiện tại
+#### About Me Section (Dòng 54-64):
+Viết giới thiệu về bản thân, học vấn, kinh nghiệm.
 
-#### News:
-Thêm các tin tức mới nhất về thành tích, bài báo được chấp nhận, giải thưởng, v.v.
+#### Research Interests Section (Dòng 67-86):
+Liệt kê các lĩnh vực nghiên cứu hoặc chuyên môn của bạn.
 
-#### Publications:
-Liệt kê các công trình xuất bản của bạn, bao gồm:
-- **Conferences**: Các bài báo hội nghị
-- **Journals**: Các bài báo tạp chí
-- **Preprints**: Các bản thảo đang xem xét
+#### News Section (Dòng 89-107):
+Thêm các tin tức, thành tích, giải thưởng mới nhất.
 
-#### Honors and Awards:
-Liệt kê các giải thưởng và danh hiệu của bạn theo thứ tự thời gian ngược
+#### Publications Section (Dòng 110-155):
+Thêm các bài báo, công trình xuất bản của bạn.
 
-#### Educations:
-Thêm thông tin về học vấn của bạn (bằng cấp, trường, thời gian)
+#### Experience Section (Dòng 158-190):
+Liệt kê kinh nghiệm làm việc của bạn.
 
-#### Experiences:
-Liệt kê kinh nghiệm làm việc và nghiên cứu của bạn
+### 3. Thêm Ảnh Đại Diện
 
-## 🎨 Tùy Chỉnh Giao Diện
-
-### Thay Đổi Màu Sắc
-
-Mở file `style.css` và sửa các biến CSS trong phần `:root`:
-
-```css
-:root {
-    --primary-color: #2c3e50;      /* Màu chính */
-    --secondary-color: #3498db;    /* Màu phụ */
-    --text-color: #333;            /* Màu chữ */
-    --light-text: #666;            /* Màu chữ nhạt */
-    --bg-color: #fff;              /* Màu nền */
-    --light-bg: #f8f9fa;           /* Màu nền nhạt */
-}
-```
-
-### Thay Đổi Font Chữ
-
-Trong file `style.css`, tìm dòng:
-```css
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-```
-
-Và thay thế bằng font chữ bạn muốn.
-
-## 📱 Responsive Design
-
-Trang web đã được tối ưu cho các thiết bị:
-- 💻 Desktop
-- 📱 Mobile
-- 📱 Tablet
-
-## 🌐 Đưa Trang Web Lên Internet
-
-### Cách 1: GitHub Pages (Miễn Phí)
-
-1. Tạo repository mới trên GitHub
-2. Upload các file lên repository
-3. Vào Settings → Pages
-4. Chọn branch main và folder root
-5. Lưu và đợi vài phút
-6. Trang web của bạn sẽ có địa chỉ: `https://username.github.io/repository-name`
-
-### Cách 2: Netlify (Miễn Phí)
-
-1. Truy cập [Netlify](https://www.netlify.com/)
-2. Kéo thả folder PROFILE vào Netlify
-3. Trang web sẽ được deploy tự động
-
-### Cách 3: Vercel (Miễn Phí)
-
-1. Truy cập [Vercel](https://vercel.com/)
-2. Import project từ GitHub hoặc upload trực tiếp
-3. Deploy tự động
-
-## 💡 Gợi Ý Nâng Cao
-
-### Thêm Ảnh Đại Diện:
 1. Chuẩn bị ảnh của bạn (ảnh vuông, tối thiểu 400x400px)
-2. Đặt ảnh vào folder PROFILE, ví dụ: `profile.jpg`
-3. Trong `index.html`, thay:
+2. Đổi tên ảnh thành `profile.jpg` hoặc `profile.png`
+3. Copy ảnh vào folder PROFILE
+4. Trong `index.html`, dòng 17, thay:
    ```html
-   <img src="https://via.placeholder.com/200" alt="Profile Photo">
+   <img src="https://via.placeholder.com/200" alt="Ha Hieu" class="profile-image">
    ```
    Thành:
    ```html
-   <img src="profile.jpg" alt="Your Name">
+   <img src="profile.jpg" alt="Ha Hieu" class="profile-image">
    ```
 
-### Thêm Google Analytics:
-Thêm code tracking của Google Analytics vào trước thẻ `</head>` trong file `index.html`
+## 🎨 Tùy Chỉnh Màu Sắc
 
-### Thêm Favicon:
-1. Tạo file favicon.ico
-2. Thêm vào `<head>`:
-   ```html
-   <link rel="icon" href="favicon.ico" type="image/x-icon">
-   ```
+Mở file `style.css` và sửa các biến trong phần `:root` (dòng 9-17):
 
-## 📝 Checklist Trước Khi Publish
+```css
+:root {
+    --primary-color: #2c3e50;      /* Màu chữ chính */
+    --secondary-color: #3498db;    /* Màu highlight (xanh) */
+    --text-color: #333;            /* Màu chữ thường */
+    --light-text: #666;            /* Màu chữ nhạt */
+    --border-color: #e1e4e8;       /* Màu viền */
+    --bg-color: #fff;              /* Màu nền chính */
+    --sidebar-bg: #f8f9fa;         /* Màu nền sidebar */
+}
+```
 
-- [ ] Đã thay thế tất cả placeholder text
+## 🌐 Deploy Lên GitHub Pages
+
+### Trang web đã được push lên GitHub!
+
+- **Repository**: https://github.com/langkhachhoha/Profile
+- **Trang web sẽ online tại**: https://langkhachhoha.github.io/Profile/
+
+### Để bật GitHub Pages:
+
+1. Vào: https://github.com/langkhachhoha/Profile/settings/pages
+2. Trong **"Build and deployment"**:
+   - **Source**: Chọn "GitHub Actions"
+3. Đợi 1-2 phút
+4. Trang web sẽ online!
+
+**Hoặc xem hướng dẫn chi tiết trong file `DEPLOY_GUIDE.md`**
+
+## 📱 Responsive Design
+
+Trang web tự động điều chỉnh trên:
+- 💻 Desktop: Sidebar bên trái, content bên phải
+- 📱 Tablet: Sidebar nhỏ hơn
+- 📱 Mobile: Sidebar chuyển lên trên, content xuống dưới
+
+## ✨ Tính Năng
+
+- ✅ Sidebar navigation với highlight active section
+- ✅ Smooth scrolling giữa các section
+- ✅ Clean, minimalist design
+- ✅ Professional academic portfolio style
+- ✅ Fully responsive
+- ✅ Easy to customize
+
+## 🔄 Cập Nhật Trang Web
+
+Sau khi chỉnh sửa nội dung, chạy các lệnh sau để cập nhật lên GitHub:
+
+```bash
+git add .
+git commit -m "Update profile content"
+git push
+```
+
+Đợi 1-2 phút, trang web sẽ tự động cập nhật!
+
+## 📝 Checklist
+
+- [ ] Đã thay đổi tên và chức danh
 - [ ] Đã thêm ảnh đại diện
-- [ ] Đã cập nhật tất cả links mạng xã hội
-- [ ] Đã kiểm tra trên mobile và desktop
-- [ ] Đã kiểm tra tất cả các liên kết
-- [ ] Đã cập nhật thông tin liên hệ
-- [ ] Đã thêm favicon (tùy chọn)
+- [ ] Đã cập nhật phần About Me
+- [ ] Đã điền Research Interests / Skills
+- [ ] Đã thêm News / Achievements
+- [ ] Đã thêm Publications / Projects
+- [ ] Đã thêm Experience
+- [ ] Đã cập nhật social links
+- [ ] Đã bật GitHub Pages
+- [ ] Đã kiểm tra trên mobile
 
 ## 🆘 Hỗ Trợ
 
-Nếu bạn gặp vấn đề hoặc cần hỗ trợ, hãy:
-1. Kiểm tra lại cú pháp HTML/CSS
-2. Kiểm tra Console trong trình duyệt (F12)
-3. Đảm bảo tất cả file đều trong cùng folder
+Nếu cần thay đổi thêm:
+- Thêm/bớt sections
+- Đổi màu sắc
+- Thay đổi layout
+- Thêm tính năng mới
 
-## 📄 License
-
-Template này được cung cấp miễn phí để sử dụng cho mục đích cá nhân và thương mại.
+Hãy cho tôi biết!
 
 ---
 
-**Chúc bạn thành công với trang web profile của mình! 🎉**
+**Trang web của bạn đang online tại: https://langkhachhoha.github.io/Profile/**
+
+Chúc bạn thành công! 🚀
