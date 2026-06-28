@@ -9,16 +9,16 @@ toc: false
 ## Conferences
 
 <div class="pub" markdown="1">
-**ParetoGrid-Guided Large Language Models for Fast and High-Quality Heuristics Design in Multi-Objective Combinatorial Optimization**<br>
+**Pareto-Grid-Guided Large Language Models for Fast and High-Quality Heuristics Design in Multi-Objective Combinatorial Optimization**<br>
 **Minh Hieu Ha**, Hung Phan, Tung Duy Doan, Tung Dao, Tran Cong Dao, Huynh Thi Thanh Binh<br>
-*AAAI Conference on Artificial Intelligence (AAAI)*, 2026 — Poster (17.6%), rank A\*<br>
+AAAI 2026 (rank A\*)<br>
 [Paper]() · [Code]()
 </div>
 
 <div class="pub" markdown="1">
 **Alimentation Deep Multiple Optimal Ant Colony Optimization to solve Vehicle Routing Problem with Time Windows**<br>
 **Ha Minh Hieu**, Hung Phan, Duc Chinh Tran, Duc Cuong Van, Dao Van Tung, Huynh Thi Thanh Binh<br>
-*GECCO '24 Companion: Genetic and Evolutionary Computation Conference Companion*, 2024 — rank A<br>
+GECCO 2024 (rank A)<br>
 [Paper]() · [Code]()
 </div>
 
@@ -26,15 +26,15 @@ toc: false
 
 <div class="pub" markdown="1">
 **FFTMed: Leveraging Fast-Fourier Transform for a Lightweight and Adversarial-Resilient Medical Image Segmentation Framework**<br>
-Viet Tien Pham, **Minh Hieu Ha**, Bao VQ Bui, Truong Son Hy<br>
-*Scientific Reports* — rank Q1<br>
+Viet Tien Pham\*, Minh Hieu Ha\*, Bao VQ Bui, Truong Son Hy<br>
+Scientific Reports (Q1)<br>
 [Paper]() · [Code]()
 </div>
 
 <div class="pub" markdown="1">
 **Memetic Algorithm for Maximizing K-coverage and K-Connectivity in Wireless Sensor Network**<br>
 Hanh Nguyen Thi, Cuong Van Duc, Chinh Tran Duc, **Hieu Ha Minh**, Son Nguyen Van, Quan La Van<br>
-*Informatica* — rank Q2<br>
+Informatica (Q2)<br>
 [Paper]() · [Code]()
 </div>
 
@@ -43,13 +43,13 @@ Hanh Nguyen Thi, Cuong Van Duc, Chinh Tran Duc, **Hieu Ha Minh**, Son Nguyen Van
 <div class="pub" markdown="1">
 **MMP-A\*: Multimodal Perception Enhanced Incremental Heuristic Search on Path Planning**<br>
 **Minh Hieu Ha**, Khanh Ly Ta, Hung Phan, Tung Doan, Tung Dao, Dao Tran, Huynh Thi Thanh Binh<br>
-*Under review at EMNLP 2026* — rank A\*<br>
+Under Review at EMNLP 2026 (rank A\*)<br>
 [Paper]() · [Code]()
 </div>
 
 <div class="pub" markdown="1">
 **TG-SR: Tree-Guided Search with Multiple Concept Priors for Symbolic Regression**<br>
 Tung Duy Doan, Tien Dat Vu, **Ha Minh Hieu**, Hung Phan, Tung Dao, Cong Dao Tran, Huynh Thi Thanh Binh<br>
-*Under review at EMNLP 2026* — rank A\*<br>
+Under Review at EMNLP 2026 (rank A\*)<br>
 [Paper]() · [Code]()
 </div>
