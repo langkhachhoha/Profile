@@ -26,6 +26,18 @@ html[data-theme="light"] { color-scheme: light; }
 @media (min-width: 64em) { .page { padding-inline-end: 64px; } }
 @media (min-width: 80em) { .page { padding-inline-end: 96px; } }
 
+/* Publications list */
+.pub {
+  margin: 0 0 1.4em;
+  line-height: 1.55;
+}
+.pub-note {
+  font-size: 0.85em;
+  color: #777;
+  margin-bottom: 1.5em;
+}
+html[data-theme="dark"] .pub-note { color: #a3a3a3; }
+
 /* Highlighted "seeking PhD" callout with a soft attention glow */
 .seeking-note {
   margin: 1.5em 0;

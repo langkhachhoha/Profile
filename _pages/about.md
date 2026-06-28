@@ -38,7 +38,8 @@ and machine learning, with a focus on the following directions:
 
 ## Latest news
 
-- **2026.06:** ✈️ ✈️I will be visiting WING@NUS Lab, National University of Singapore, this summer (June–August) as a research intern under [Tongyao Zhu](https://tongyao-zhu.github.io/)u (PhD candidate) and [Prof. Min-Yen Kan](https://www.comp.nus.edu.sg/~kanmy/).
+- **2026.06:** ✈️ ✈️I will be visiting WING@NUS Lab, National University of Singapore, this summer (June–August) as a research intern under [Tongyao Zhu](https://tongyao-zhu.github.io/) (PhD candidate) and [Prof. Min-Yen Kan](https://www.comp.nus.edu.sg/~kanmy/).
 - **2025.11:**  🎉🎉Our paper ["**Pareto-Grid-Guided Large Language Models for Fast and High-Quality Heuristics Design in Multi-Objective Combinatorial Optimization**"](https://arxiv.org/abs/2507.20923) has been accepted at AAAI 2026 (rank A*)!.
 - **2025.07:** 🏆🏆 First Runner-up in Competition on LLM-designed Evolutionary Algorithms at GECCO 2025 (rank A)!!
 - **2025.07:** 🏆🏆 First Runner-up in Competition on Numerical Global Optimization Competition on GNBG-Il generated Test Suite at GECCO 2025 (rank A)!!
+ 
