@@ -17,6 +17,15 @@ html[data-theme="light"] { color-scheme: light; }
   border-radius: 50%;
 }
 
+/* Slightly smaller, more balanced body text (theme defaults to 18/20/22px) */
+@media (min-width: 48em) { html { font-size: 17px; } }
+@media (min-width: 64em) { html { font-size: 18px; } }
+@media (min-width: 80em) { html { font-size: 19px; } }
+
+/* Widen the reading column by trimming the oversized right gutter */
+@media (min-width: 64em) { .page { padding-inline-end: 64px; } }
+@media (min-width: 80em) { .page { padding-inline-end: 96px; } }
+
 /* Highlighted "seeking PhD" callout with a soft attention glow */
 .seeking-note {
   margin: 1.5em 0;
