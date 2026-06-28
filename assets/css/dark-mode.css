@@ -6,6 +6,17 @@
 html[data-theme="dark"]  { color-scheme: dark; }
 html[data-theme="light"] { color-scheme: light; }
 
+/* ---------- General tweaks (both themes) ---------- */
+/* Force a perfect circular avatar even for non-square photos */
+.author__avatar img {
+  width: 175px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 /* ---------- Toggle button (visible in both themes) ---------- */
 .theme-toggle {
   position: fixed;
