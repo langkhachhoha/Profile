@@ -6,14 +6,18 @@
 }
 
 :root {
-    --primary-color: #2c3e50;
-    --text-color: #333;
-    --light-text: #666;
-    --bg-color: #fff;
-    --light-bg: #f8f9fa;
-    --border-color: #e1e4e8;
-    --link-color: #0366d6;
-    --link-hover: #0056b3;
+    --primary-color: #1a1a2e;
+    --secondary-color: #16213e;
+    --accent-color: #0f3460;
+    --highlight-color: #e94560;
+    --text-color: #e8e8e8;
+    --light-text: #a8a8a8;
+    --bg-color: #0f0f1e;
+    --light-bg: #1a1a2e;
+    --border-color: #2a2a3e;
+    --link-color: #3b82f6;
+    --link-hover: #60a5fa;
+    --card-bg: #16213e;
 }
 
 body {
@@ -31,12 +35,13 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: var(--bg-color);
+    background-color: var(--secondary-color);
     border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 .nav-menu {
@@ -86,8 +91,8 @@ body {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--light-bg);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 4px solid var(--highlight-color);
+    box-shadow: 0 8px 24px rgba(233, 69, 96, 0.3);
 }
 
 .profile-right {
@@ -151,14 +156,16 @@ body {
 .content-section h2 {
     font-size: 2em;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--text-color);
     margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--highlight-color);
 }
 
 .content-section h3 {
     font-size: 1.5em;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--text-color);
     margin: 30px 0 20px;
 }
 
@@ -184,7 +191,7 @@ body {
 
 .news-list strong {
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--highlight-color);
 }
 
 /* Publication List */
@@ -241,7 +248,7 @@ body {
 
 .timeline-list strong {
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--highlight-color);
 }
 
 /* Footer */
