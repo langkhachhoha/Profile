@@ -110,6 +110,13 @@ body {
     color: var(--text-color);
 }
 
+.profile-info > li i {
+    margin-right: 8px;
+    color: var(--text-color);
+    width: 16px;
+    display: inline-block;
+}
+
 .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +127,10 @@ body {
     color: var(--link-color);
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+.social-links a i {
+    margin-right: 5px;
 }
 
 .social-links a:hover {
