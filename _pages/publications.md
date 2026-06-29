@@ -53,3 +53,9 @@ Tung Duy Doan, Tien Dat Vu, **Ha Minh Hieu**, Hung Phan, Tung Dao, Cong Dao Tran
 Under Review at EMNLP 2026 (rank A\*)<br>
 [Paper](https://drive.google.com/file/d/1b9lpBbx7rBB5Z1z-lWIvSYeah_LkLJP4/view?usp=sharing) · [Code](https://github.com/ihbkaiser/TG-SR)
 </div>
+
+## In Progress
+<div class="pub" markdown="1">
+**SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery**<br>
+[Code](https://github.com/langkhachhoha/skydiscover)
+</div>
