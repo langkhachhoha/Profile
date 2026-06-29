@@ -58,4 +58,5 @@ Under Review at EMNLP 2026 (rank A\*)<br>
 <div class="pub" markdown="1">
 **SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery**<br>
 [Code](https://github.com/langkhachhoha/skydiscover)
+A low-resource research lab in miniature: cheap "students" (Speculator) explore in parallel, a rarely-woken "professor" (Navigator) sets direction, and a "senior labmate" (Advisor) mentors from the whole trajectory — near-SOTA quality at 2–3× lower cost.<br>
 </div>
